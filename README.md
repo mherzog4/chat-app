@@ -9,4 +9,6 @@
 - React
 - GraphQL
 - Socket.io
+- vite 
+
 
