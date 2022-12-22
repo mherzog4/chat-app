@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import  Test from './components/Test'
-import LoginButton from './utils/LoginButton'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import Test from "./components/Test";
+import LoginButton from "./utils/LoginButton";
+import LogoutButton from "./utils/LogoutButton";
+import Profile from "./utils/Profile";
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="text-3xl">
       <LoginButton />
+      <LogoutButton />
+      <Profile />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -30,10 +35,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
+  );
 }
 
-
-
-
-export default App
+export default App;
